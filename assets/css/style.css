@@ -112,19 +112,35 @@ html {
     line-height: 38px;
 }
 
+#header .mobile-menu-btn {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     line-height: 46px;
     padding: 0 16px;
-    height: 100%;
     cursor: pointer;
 }
 
+
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 16px;
 }
 
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+}
 #header .search-btn:hover {
     background-color: #f44336;
 }
@@ -156,9 +172,12 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading {
@@ -184,7 +203,6 @@ html {
 }
 
 #content .members-list {
-    display: flex;
     justify-content: center;
     margin-top: 47px;
 }
@@ -349,4 +367,6 @@ html {
 #footer .socicals-list a:hover {
     color: rgba(0, 0, 0, 0.3);
 }
+
+
 
